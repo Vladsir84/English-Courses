@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "../page.module.css";
+import styles from "../../styles/page.module.scss";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 

@@ -1,0 +1,163 @@
+.om_block {
+  height: 450px;
+  display: flex;
+}
+
+.om_block_left {
+  background: #0bda51;
+  color: #fff;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.om_block_right {
+  width: 50%;
+  height: 450px;
+}
+
+.om_image {
+  width: 100%;
+  height: 450px;
+}
+
+.wio_menu {
+  width: 700px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.wio_blocks_wrapper {
+  padding: 0 40px;
+}
+
+.wio_menu_item {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.wio_block {
+  display: flex;
+  height: 380px;
+  padding: 50px 50px 0 50px;
+  
+}
+
+.wio_block_item {
+  width: 50%;
+  padding: 0 30px;
+}
+
+.wio_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.divider {
+  width: 595px;
+  margin-top: 0px;
+  opacity: 0.3;
+}
+
+.left_block {
+  left: 0;
+  animation: slideFromLeft 2s ease forwards;
+}
+
+.right_block {
+  right: 0;
+  animation: slideFromRight 2s ease forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .wio_block {
+    height: 100%;
+  }
+
+  .om_block_left {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .om_block {
+    height: 100%;
+  }
+
+  .om_block_left {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    padding: 20px;
+  }
+
+  .om_block_right {
+    width: 100%;
+    height: 330px;
+  }
+
+  .om_image {
+    width: 100%;
+    height: 330px;
+  }
+
+  .wio_menu {
+    width: 100%;
+  }
+
+  .divider {
+    width: 100%;
+  }
+  
+  .wio_menu_item {
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .wio_blocks_wrapper {
+    padding: 0;
+  }
+  
+  .wio_block {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .wio_block_item {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .om_block {
+    flex-direction: column-reverse;
+  }
+}

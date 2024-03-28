@@ -1,20 +1,20 @@
 import Image from "next/image";
-import styles from "../page.module.css";
-import { footerInfo } from "../data";
+import "../../styles/footer.scss";
+import { footerInfo } from "../../data";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div style={{ width: "70%", marginTop: "30px" }}>
-        <div className={styles.footer_info_wrapper}>
-          {footerInfo.map((item) => (
-            <p key={item.id}>Information</p>
-          ))}
+    <footer className="footer">
+      <div className="footer-content-wrapper">
+        <div className="footer_info_wrapper">
+          {/* {footerInfo.map((item) => ( */}
+            <p className="footer_info">All rights reserved</p>
+          {/* ))} */}
         </div>
         <hr style={{ marginTop: "30px" }} />
-        <div className={styles.footer_blocks_wrapper}>
+        <div className="footer_blocks_wrapper">
           <h3>Vovadron ltd.</h3>
-          <div className={styles.icons}>
+          <div className="icons">
             <Image src={"/facebook.svg"} width={30} height={30} alt="" />
             <Image
               src={"/instagram.svg"}

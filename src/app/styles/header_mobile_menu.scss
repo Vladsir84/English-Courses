@@ -1,0 +1,13 @@
+.menu_wrapper {
+    position: absolute;
+    top: 45px;
+    right: 2px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    z-index: 999;
+    color: #0bda51;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: 600;
+}

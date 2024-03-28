@@ -1,0 +1,17 @@
+.lang-menu-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 365px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    z-index: 999;
+    color: #0bda51;
+    border: 1px solid #0bda51;
+    padding: 3px 10px 10px 10px;
+    font-weight: 600;
+}
+
+.lang-menu-item {
+   margin-top: 7px;
+   cursor: pointer;
+}

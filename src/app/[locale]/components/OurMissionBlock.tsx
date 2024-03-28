@@ -1,5 +1,4 @@
-import Image from "next/image";
-import "./style.css";
+import "../../styles/our_mission.scss";
 
 const OurMissionBlock = () => {
   return (
