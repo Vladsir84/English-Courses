@@ -1,0 +1,11 @@
+{
+  "Header": {
+    "About": "О нас",
+    "Courses": "Курсы",
+    "Contacts": "Контакты"
+  },
+  
+  "Post_header": {
+    "Request a call": "Заказать звонок"
+  }
+}

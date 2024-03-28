@@ -1,11 +1,10 @@
 "use client";
 import { useState } from "react";
+import styles from "../../styles/page.module.scss";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { mainContent } from "../data";
-import styles from "../page.module.css";
 
-export default function Courses() {
+export default function Contacts() {
   const [scrolled, setScrolled] = useState(false);
 
   function logScrollCoordinates() {
@@ -27,24 +26,11 @@ export default function Courses() {
       >
         <div className={styles.container}>
           <h1 className={styles.title} style={{ marginTop: "150px" }}>
-            Courses
+            Contacts
           </h1>
-          {mainContent.map((item) => (
-            <div className={styles.content_item} key={item.id}>
-              <iframe
-                className={styles.video}
-                src={item.video}
-                width="540"
-                height="360"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-              ></iframe>
-              <p className={styles.description}>{item.description}</p>
-            </div>
-          ))}
         </div>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
