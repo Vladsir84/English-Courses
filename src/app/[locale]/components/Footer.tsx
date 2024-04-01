@@ -1,5 +1,4 @@
 import Image from "next/image";
-import "../../styles/footer.scss";
 import { footerInfo } from "../../data";
 
 const Footer = () => {

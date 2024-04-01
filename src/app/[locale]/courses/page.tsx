@@ -3,7 +3,6 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { mainContent } from "../../data";
-import styles from "../../styles/page.module.scss";
 
 export default function Courses() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,25 +20,25 @@ export default function Courses() {
     <>
       <Header scrolled={scrolled} />
       <main
-        className={styles.main}
+        className="main"
         style={{ height: "100vh" }}
         onWheel={logScrollCoordinates}
       >
-        <div className={styles.container}>
-          <h1 className={styles.title} style={{ marginTop: "150px" }}>
+        <div className="container">
+          <h1 className="title" style={{ marginTop: "150px" }}>
             Courses
           </h1>
           {mainContent.map((item) => (
-            <div className={styles.content_item} key={item.id}>
+            <div className="content_item" key={item.id}>
               <iframe
-                className={styles.video}
+                className="video"
                 src={item.video}
                 width="540"
                 height="360"
                 allow="autoplay; fullscreen"
                 allowFullScreen
               ></iframe>
-              <p className={styles.description}>{item.description}</p>
+              <p className="description">{item.description}</p>
             </div>
           ))}
         </div>

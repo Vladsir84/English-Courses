@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import styles from "../../styles/page.module.scss";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -20,12 +19,12 @@ export default function Contacts() {
     <>
       <Header scrolled={scrolled} />
       <main
-        className={styles.main}
+        className="main"
         style={{ height: "100vh" }}
         onWheel={logScrollCoordinates}
       >
-        <div className={styles.container}>
-          <h1 className={styles.title} style={{ marginTop: "150px" }}>
+        <div className="container">
+          <h1 className="title" style={{ marginTop: "150px" }}>
             Contacts
           </h1>
         </div>

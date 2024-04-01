@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "../../styles/header.scss";
 import HeaderMobileMenu from "./HeaderMobileMenu";
 import LangMenu from "./LangManu";
 import { useLocale } from "next-intl";

@@ -1,5 +1,3 @@
-import "../../styles/payment.scss";
-
 const PaymentBlock = () => {
   return (
     <div className="payment-block-wrapper">

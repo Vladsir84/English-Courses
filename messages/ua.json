@@ -7,5 +7,12 @@
 
   "Post_header": {
     "Request a call": "Замовити дзвінок"
+  },
+
+  "Should you": {
+    "Should you come to us if:": "Вам до нас, якщо:",
+    "Lessons For Children": "Уроки для дітей",
+    "Speaking Lessons": "Розмовні Зайняття",
+    "Preparing for tests": "Підготовка до ЗНО"     
   }
 }

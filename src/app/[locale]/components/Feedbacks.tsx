@@ -1,5 +1,4 @@
 import { feedbacks } from "../../data";
-import "../../styles/feedbacks.scss";
 
 const Feedbacks = () => {
   return (

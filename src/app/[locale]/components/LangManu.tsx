@@ -1,7 +1,6 @@
 "use client";
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
-import "../../styles/lang_menu.scss";
 
 const LangMenu = () => {
   const [isPending, startTransition] = useTransition();
