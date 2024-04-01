@@ -1,5 +1,4 @@
 import { useLocale } from "next-intl";
-import "../../styles/header_mobile_menu.scss";
 import Link from "next/link";
 
 const HeaderMobileMenu = () => {

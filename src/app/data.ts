@@ -97,3 +97,24 @@ export const feedbacks = [
       "Если вам нужно развязать ваш подвешанный английский язык для бизнесса, то вам только сюда!",
   },
 ];
+
+export const programs = [
+  {
+    id: 1,
+    title: "From Elementary to Intermediate",
+    subtitle:
+      "You will learn new things and become better at English up to the Intermediate level.",
+  },
+  {
+    id: 2,
+    title: "From Intermediate to Advanced",
+    subtitle:
+      "Say goodbye to the language barrier, overcome the 'plateau' effect, and finally reach the coveted Advanced level!",
+  },
+  {
+    id: 3,
+    title: "From Advanced to Proficiency",
+    subtitle:
+      "Black belt in English: get closer to the level of native speakers in two months.",
+  },
+];

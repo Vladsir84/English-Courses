@@ -1,19 +1,22 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const WhoIsOur = () => {
   const [menuItem, setMenuItem] = useState("children");
-
+  
+  const t = useTranslations('Should you');
+  
   const menuItems = [
-    { id: 1, title: "Lessons For Children", mode: "children" },
-    { id: 2, title: "Speaking Lessons", mode: "adults" },
-    { id: 3, title: "Preparing for tests", mode: "companies" },
+    { id: 1, title: t("Lessons For Children"), mode: "children" },
+    { id: 2, title: t("Speaking Lessons"), mode: "adults" },
+    { id: 3, title: t("Preparing for tests"), mode: "companies" },
   ];
 
   return (
     <div style={{ padding: "15px" }}>
       <h1 style={{ marginTop: "15px", color: "#fdb548" }}>
-        Should you come to us if:
+        {t("Should you come to us if:")}
       </h1>
       <div className="wio_menu">
         {menuItems.map((item) => (

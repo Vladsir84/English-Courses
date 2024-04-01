@@ -1,5 +1,4 @@
 import { wuItems } from "../../data";
-import "../../styles/why_us.scss";
 
 const WhyUsBlock = () => {
   return (

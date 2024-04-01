@@ -1,5 +1,3 @@
-import "../../styles/our_mission.scss";
-
 const OurMissionBlock = () => {
   return (
     <div className="om_block">
