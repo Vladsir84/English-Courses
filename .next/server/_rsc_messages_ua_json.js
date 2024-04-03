@@ -17,7 +17,7 @@ exports.modules = {
   \**************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"Header":{"About":"Про нас","Courses":"Курси","Contacts":"Контакти"},"Post_header":{"Request a call":"Замовити дзвінок"},"Should you":{"Should you come to us if:":"Вам до нас, якщо:","Lessons For Children":"Уроки для дітей","Speaking Lessons":"Розмовні Зайняття","Preparing for tests":"Підготовка до ЗНО"}}');
+module.exports = JSON.parse('{"Header":{"About":"Про нас","Courses":"Курси","Contacts":"Контакти"},"Post_header":{"Request a call":"Замовити дзвінок","Book a lesson":"Забронювати заняття"},"Should you":{"Should you come to us if:":"Вам до нас, якщо:","Lessons For Children":"Уроки для дітей","Speaking Lessons":"Розмовні Зайняття","Preparing for tests":"Підготовка до ЗНО"}}');
 
 /***/ })
 

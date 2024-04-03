@@ -10,9 +10,9 @@ const YourProgram = () => {
             <p className="program-item-subtitle">{item.subtitle}</p>
           </div>
           <div className="program-btn-wrapper">
-            <button className="program-btn">Enroll</button>
+            <button className="program-btn">Go to the payment</button>
           </div>
-          <img src="London.jpg" alt="" className="program-img" />
+          <img src={item.img} alt="" className="program-img" />
         </div>
       ))}
     </div>

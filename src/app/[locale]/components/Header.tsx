@@ -17,10 +17,10 @@ const Header = (props: HeaderProps) => {
   const [menu, setMenu] = useState(false);
   const [langMenu, setLangMenu] = useState(false);
 
-  const locale = useLocale(); 
+  const locale = useLocale();
 
-  const t = useTranslations('Header');
-  
+  const t = useTranslations("Header");
+
   return (
     <header className={props.scrolled ? "header_scrolled" : "header"}>
       <div className="header_container">
@@ -28,14 +28,17 @@ const Header = (props: HeaderProps) => {
           <h1 className="logo">Studio Busy</h1>
         </Link>
         <div className="options">
-          <Image
-            width={30}
-            height={30}
-            src={props.scrolled ? languageScrolled : language}
-            alt=""
-            className="menu_elem"
-            onClick={() => setLangMenu(!langMenu)}
-          />
+          <div className="lang-wrapper">
+            <Image
+              width={30}
+              height={30}
+              src={props.scrolled ? languageScrolled : language}
+              alt=""
+              className="menu_elem"
+              onClick={() => setLangMenu(!langMenu)}
+            />
+           <p className="locale">{locale}</p>
+          </div>
           <Link href={`/${locale}/about`} className="menu_elem">
             {t("About")}
           </Link>

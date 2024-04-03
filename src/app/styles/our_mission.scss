@@ -1,5 +1,6 @@
 .om_block {
-  height: 450px;
+  height: auto;
+  width: 100%;
   display: flex;
 }
 
@@ -7,7 +8,6 @@
   background: #0bda51;
   color: #fff;
   width: 50%;
-  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,12 +16,6 @@
 
 .om_block_right {
   width: 50%;
-  height: 450px;
-}
-
-.om_image {
-  width: 100%;
-  height: 450px;
 }
 
 .wio_menu {
@@ -47,7 +41,7 @@
   display: flex;
   height: 380px;
   padding: 50px 50px 0 50px;
-  
+
 }
 
 .wio_block_item {
@@ -80,6 +74,7 @@
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -89,6 +84,7 @@
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -105,25 +101,10 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .om_block {
-    height: 100%;
-  }
-
   .om_block_left {
     width: 100%;
-    height: 330px;
     display: flex;
     padding: 20px;
-  }
-
-  .om_block_right {
-    width: 100%;
-    height: 330px;
-  }
-
-  .om_image {
-    width: 100%;
-    height: 330px;
   }
 
   .wio_menu {
@@ -133,7 +114,7 @@
   .divider {
     width: 100%;
   }
-  
+
   .wio_menu_item {
     font-size: 15px;
     padding: 16px;
@@ -142,7 +123,7 @@
   .wio_blocks_wrapper {
     padding: 0;
   }
-  
+
   .wio_block {
     height: auto;
     flex-direction: column;
@@ -159,5 +140,13 @@
 @media only screen and (max-width: 768px) {
   .om_block {
     flex-direction: column-reverse;
+  }
+
+  .om_block_right {
+    width: 100%;
+  }
+
+  .wio_block {
+    padding: 0px;
   }
 }
