@@ -33,6 +33,16 @@
     font-size: 45px;
 }
 
+.lang-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.locale {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
 .menu_elem {
     font-size: 24px;
     font-weight: 600;

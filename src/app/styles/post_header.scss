@@ -23,13 +23,12 @@
 }
 
 .post_header_btns_wrapper {
-    width: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .post_header_btn {
-    margin-top: 30px;
+    margin-top: 40px;
     padding: 20px 20px;
     font-size: 20px;
     font-weight: 600;
@@ -43,6 +42,7 @@
 .right {
     background-color: #fff;
     color: #116eee;
+    margin-left: 30px;
 }
 
 

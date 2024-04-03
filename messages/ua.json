@@ -6,13 +6,14 @@
   },
 
   "Post_header": {
-    "Request a call": "Замовити дзвінок"
+    "Request a call": "Замовити дзвінок",
+    "Book a lesson": "Забронювати заняття"
   },
 
   "Should you": {
     "Should you come to us if:": "Вам до нас, якщо:",
     "Lessons For Children": "Уроки для дітей",
     "Speaking Lessons": "Розмовні Зайняття",
-    "Preparing for tests": "Підготовка до ЗНО"     
+    "Preparing for tests": "Підготовка до ЗНО"
   }
 }

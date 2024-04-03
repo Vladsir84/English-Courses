@@ -101,20 +101,23 @@ export const feedbacks = [
 export const programs = [
   {
     id: 1,
-    title: "From Elementary to Intermediate",
+    title: "One hour",
     subtitle:
       "You will learn new things and become better at English up to the Intermediate level.",
+    img: "program-img_1.jpg",
   },
   {
     id: 2,
-    title: "From Intermediate to Advanced",
+    title: "Pack of six lessons",
     subtitle:
       "Say goodbye to the language barrier, overcome the 'plateau' effect, and finally reach the coveted Advanced level!",
+    img: "program-img_2.png",
   },
   {
     id: 3,
-    title: "From Advanced to Proficiency",
+    title: "Ten lessons",
     subtitle:
       "Black belt in English: get closer to the level of native speakers in two months.",
+    img: "program-img_3.jpg",
   },
 ];

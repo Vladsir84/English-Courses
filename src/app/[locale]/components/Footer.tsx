@@ -10,7 +10,7 @@ const Footer = () => {
             <p className="footer_info">All rights reserved</p>
           {/* ))} */}
         </div>
-        <hr style={{ marginTop: "30px" }} />
+        <hr style={{ marginTop: "20px" }} />
         <div className="footer_blocks_wrapper">
           <h3>Vovadron ltd.</h3>
           <div className="icons">

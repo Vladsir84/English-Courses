@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhyUsBlock from "./components/WhyUsBlock";
@@ -12,12 +12,19 @@ import YourProgram from "./components/YourProgram";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
+  // const [elemHeight, setElemHeight] = useState(0);
 
   const t = useTranslations("Post_header");
 
-  // const elem: HTMLDivElement| null | undefined = document.getElementById("program-item");
+  // const elem = document.getElementById("program-item");
   // const elemHeight: number | undefined = elem?.getBoundingClientRect().top;
   // console.log(elemHeight);
+
+  // useEffect(() => {
+  //   if (elem) {
+  //     setElemHeight(elem.getBoundingClientRect().top);
+  //   }
+  // }, [elem]);
 
   function logScrollCoordinates() {
     let scrollY = window.scrollY;
@@ -34,9 +41,7 @@ export default function Home() {
       <main className="main" onWheel={logScrollCoordinates}>
         <div className="post_header">
           <div className="title_wrapper">
-            <h1 className="title">
-              Learn a foreign language by studying 10 minutes a day
-            </h1>
+            <h1 className="title">Learn English language with us</h1>
             <p className="subtitle">
               Set achievable goals. Get advice from native speakers. Achieve
               more. Learn a foreign language and discover a world of new
@@ -52,9 +57,7 @@ export default function Home() {
                 className="post_header_btn right"
                 // onClick={() => window.scrollTo(0, elemHeight - 120)}
               >
-                {/* <a href="https://t.me/Darina_busy" target="_blank"> */}
-                {t("Request a call")}
-                {/* </a>{" "} */}
+                {t("Book a lesson")}
               </button>
             </div>
           </div>
